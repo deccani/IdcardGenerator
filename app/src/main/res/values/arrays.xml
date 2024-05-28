@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="color_options">
+        <item>White</item>
+        <item>Light Gray</item>
+        <item>Blue</item>
+    </string-array>
+</resources>
