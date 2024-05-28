@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_margin="10dp" />
+
+    <EditText
+        android:id="@+id/company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/designation"
+        android:hint="Company"
+        android:layout_margin="10dp" />
+
+    <EditText
+        android:id="@+id/designation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:hint="Designation"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:id="@+id/selectpicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/company"
+        android:layout_centerHorizontal="true"
+        android:text="Select Picture" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/selectpicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="#F1F1F1" />
+
+    <Button
+        android:id="@+id/generateidcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/picture"
+        android:layout_centerHorizontal="true"
+        android:text="Generate ID Card" />
+
+    <TextView
+        android:id="@+id/idcardtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generateidcard"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:text=" Id card :- "
+        android:textColor="@android:color/black"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/idcardimage"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/idcardtext"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
